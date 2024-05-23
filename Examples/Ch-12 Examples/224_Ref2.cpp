@@ -7,13 +7,13 @@
 #include <string>
 using namespace std;
                         // Prototypes:
-bool getClient( string& name, long& nr);
-void putClient( const string& name, const long& nr);
+bool getClient( string& name, unsigned long& nr);
+void putClient( const string& name, const unsigned long& nr);
 
 int main()
 {
     string clientName;
-    long   clientNr;
+    unsigned long   clientNr;
     
     cout << "\nTo input and output client data \n"
          << endl;
@@ -25,7 +25,7 @@ int main()
     return 0;
 }
 
-bool getClient( string& name, long& nr) // Definition
+bool getClient( string& name, unsigned long& nr) // Definition
 {
     cout << "\nTo input client data!\n"
         << " Name:   ";
@@ -37,7 +37,7 @@ bool getClient( string& name, long& nr) // Definition
     return true;
 }
                                          // Definition   
-void putClient( const string& name, const long& nr)
+void putClient( const string& name, const unsigned long& nr)
 {                      // name and nr can only be read!
     cout << "\n-------- Client Data ---------\n"
     << "\n Name:   ";  cout << name
