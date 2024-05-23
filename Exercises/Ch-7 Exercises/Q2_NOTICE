@@ -1,0 +1,50 @@
+/** 
+ * *Modify the program ball1.cpp to
+a. display a white ball on a blue background,
+b. terminate the program when the Esc key is pressed,
+c. increase the speed of the ball with the + key and decrease the speed
+   with the – key.
+You will need the functions kbhit() and getch() (shown opposite) to solve
+parts b and c of this problem.
+*/
+
+// *  @aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+
+/* hint 
+
+Hints for Exercise 2
+    You can use the function kbhit() to test whether the user has pressed a key. If
+so, the function getch() can be used to read the character.This avoids
+interrupting the program when reading from the keyboard.
+    These functions have not been standardized by ANSI but are available on
+almost every system. Both functions use operating system routines and are
+declared in the header file conio.h.
+
+The function kbhit()
+        Prototype: int kbhit();
+        Returns: 0, if no key was pressed, otherwise != 0.
+
+    When a key has been pressed, the corresponding character can be read by
+getch().
+
+
+The function getch()
+
+        Prototype: int getch();
+        Returns: The character code.There is no special return value on reaching
+                 end-of-file or if an error occurs.
+
+    In contrast to cin.get(), getch() does not use an input buffer when
+reading characters, that is, when a character is entered, it is passed directly to
+the program and not printed on screen. Additionally, control characters, such as
+return ( = 13), Ctrl+Z ( = 26), and Esc ( = 27), are passed to the program “as is.”
+
+Example: int c;
+         if( kbhit() != 0)  // Key was pressed?
+         {
+             c = getch();    // Yes -> Get character
+             if( c == 27 )   // character == Esc?
+             // . . .
+         }
+
+*/

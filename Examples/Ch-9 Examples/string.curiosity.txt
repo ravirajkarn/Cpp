@@ -1,0 +1,8 @@
+I want to find what if I intered "\n" in string.
+
+windows----------------------------------------------------------------------------
+If we enter it in source code it exicute as you desire i.e. change new line. 
+
+if we enter it in our program output it exicute as you desire i.e. as a text.
+-----------------------------------------------------------------------------------
+
