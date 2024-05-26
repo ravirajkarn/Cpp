@@ -17,11 +17,12 @@
 
 #include <iostream>
 #include <iomanip>
+#include <cmath>
 #include <string>
 
 using namespace std;
 
-const long double &pi = 3.1415926536 ; 
+const long double &pi = 3.1415926536;
 
 void circle(double &radius, double &area, double &circumference)
 {
@@ -29,14 +30,46 @@ void circle(double &radius, double &area, double &circumference)
     circumference = 2 * pi * radius;
 }
 
+int length(const double &num, int precision = 1) // imp v2.0
+{
+    string conv = to_string(num);
+
+    // Removing trailing zero
+    conv.erase(conv.find_last_not_of('0') + precision, string::npos);
+
+    // Removal of decimal point if it's last character.
+    if (conv.back() == '.')
+        conv.pop_back();
+
+    return conv.length();
+}
+
 int main()
 {
-    double radius = 3 , area, circumference;
-    
-    cout << "           radius:          *       circumference:       *             area:          \n" << setw(86) << setfill('*') << "*\n" << setfill(' ') ;
-    
-    circle (radius, area, circumference);
-    cout << to_string(radius).length() << setw(((to_string(radius).length()/2)+14)) << radius << setw(14-(to_string(radius).length()/2))<< "*" << setw(((to_string(circumference).length()/2)+14)) << circumference << setw(14-(to_string(circumference).length()/2))<< "*" << setw(((to_string(area).length()/2)+14)) << area << setw(14-(to_string(area).length()/2))<< "*\n" ;
-    
+    cout << "           radius:          *       circumference:       *             area:          \n"
+         << setw(87) << setfill('*') << "*\n"
+         << setfill(' ');
+
+    for (double radius(5.5), area, circumference; radius < 10.0; radius = radius + 0.5)
+    {
+        circle(radius, area, circumference);
+        int temp_rad = length(radius), temp_area = length(area),
+            temp_circum = length(circumference);
+
+        cout << setw(((temp_rad / 2) + 14)) << radius
+             << setw(15 - (temp_rad / 2)) << "*"
+             << setw(((temp_circum / 2) + 14)) << circumference
+             << setw(15 - (temp_circum / 2)) << "*"
+             << setw(((temp_area / 2) + 14)) << area
+             << setw(15 - (temp_area / 2)) << "*\n";
+    }
+
     return 0;
 }
+
+/*
+~ The program is running fine problem is in alignment of number. execute the program and see. 
+~ problem is face on value of radius = 6; 7.5; 8.5; 9; 9.5; 10.
+
+? any suggestion comment down. I Will definitely find solution in future.
+*/
