@@ -19,29 +19,73 @@ void era_eq( std::string &equation)
     }
 }
 
-// cutting out a block from equation. 
-std::string block(const std::string& equation)
+// cutting out a block from equation.
+std::string block(std::string &equation)
 {
-    switch (equation)
+    int position = 0, count = 0;
+    switch (equation.at(0))
     {
-    case /* constant-expression */:
-        /* code */
+    case '+':
+        position = 0; count = 1;
         break;
-    
+    case '-':
+        position = 0, count = 1;
+        break;
+    case '=':
+        position = 1, count = 1;
+        break;
     default:
+        position = 0, count = 0;
         break;
     }
-    std::cout << equation.at(3) << isdigit(equation.at(3));
+
+    for (; equation[count] != '+' && equation[count] != '-' && equation[count] != '=' && count < equation.size(); count++ )
+            ; // finding the length of a block.
+
+        std::string result(equation, position, count); // creating a temp block.
+        equation.erase(0, count);               // erasing result from the equation.
+        return result;                      // output block;
+
+    // if (equation.at(0) == '+' || equation.at(0) == '-')
+    // {
+    //     int i(1);
+    //     for (; equation.at(i) != '+' && equation.at(i) != '-'&& equation.at(i) != '=' && i < equation.size() - 1; i++)
+    //         ; // finding the length of a block.
+
+    //     std::string result(equation, 0, i); // creating a temp block.
+    //     equation.erase(0, i);               // erasing result from the equation.
+    //     return result;                      // output block;
+    // }
+    // else if (equation.at(0) == '=')
+    // {
+    //     int i(1);
+    //     for (; equation.at(i) != '+' && equation.at(i) != '-' && equation.at(i) != '=' && i < equation.size() - 1; i++)
+    //         ; // finding the length of a block.
+
+    //     std::string result(equation, 1, i); // creating a temp block.
+    //     equation.erase(0, i);               // erasing result from the equation.
+    //     return result;                      // output block;
+    // }
+    // else
+    // {
+    //     int i(0);
+    //     for (; equation[i] != '+' && equation[i] != '-' && equation[i] != '=' && i < equation.size(); i++)
+    //         ; // finding the length of a block.
+
+    //     std::string result(equation, 0, i); // creating a temp block.
+    //     equation.erase(0, i);               // erasing result from the equation.
+    //     return result;                      // output block;
+    // }
 }
 
 int main(){
     std::string a ("245x^2+79x+45=0"),
-                b ("245x^2+79x+45=45"),
-                c ("(45+79)(x^2)+45x=0"),
-                d ("459(x^2)+85x+45=0");
+                b ("+45=4455");
+                //c ("(45+79)(x^2)+45x=0"),
+                //d ("459(x^2)+85x+45=0");
 
-    era_eq(d); // removing space 
-    block(b);
+    era_eq(b); // removing space 
+    std::cout << block(b);
 
     return 0;
 }
