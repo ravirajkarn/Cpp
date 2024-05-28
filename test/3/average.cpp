@@ -1,5 +1,5 @@
 /*This file is a detailed analysis to find average of given inters.
-/*Motive to collect and use all the possible ways or algoriths to find average.
+/*Motive to collect and use all the possible ways or algorithm to find average.
 /*Table contains:-
 /*1) average1   #
 /*# is the best one till now */
@@ -13,7 +13,7 @@ double average1(int n, double sum);
 int main (){
     double sum(0), a;
     int n(0);
-    cout <<"Enter your numbers to calculate average." << endl;
+    cout <<"\nEnter your numbers to calculate average." << endl;
     do
     {
         a = 0;
@@ -26,7 +26,7 @@ int main (){
     return 0;     
 }
 
-/*This average1 is function created by me. Without any help from external sorce.*/
+/*This average1 is function created by me. Without any help from external source.*/
 double average1(int n, double sum){
     return sum/n;
 }

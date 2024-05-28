@@ -46,7 +46,13 @@
         "streambuf": "cpp",
         "typeinfo": "cpp",
         "ios": "cpp",
-        "122_ball1.test2.C": "cpp"
+        "122_ball1.test2.C": "cpp",
+        "bit": "cpp",
+        "compare": "cpp",
+        "concepts": "cpp",
+        "optional": "cpp",
+        "string_view": "cpp",
+        "numbers": "cpp"
     },
     "cSpell.enableFiletypes": [
         "clojure"
@@ -58,7 +64,9 @@
         "getput",
         "namesp",
         "oldsec",
-        "timediff"
+        "strcal",
+        "timediff",
+        "zoro"
     ],
     "cSpell.words": [
         "kumar",
