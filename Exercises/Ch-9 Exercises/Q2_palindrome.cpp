@@ -20,6 +20,7 @@ int main(){
     int i, difference;
     bool palindrome(true);
 
+
     cout << "\n This Program will check your input wether it is palindrome or not. \n";
     cin >> input;
 

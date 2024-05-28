@@ -46,7 +46,7 @@ int length(const double &num, int precision = 1) // imp v2.0
 
 int main()
 {
-    cout << "           radius:          *       circumference:       *             area:          \n"
+    cout << "\n           radius:          *       circumference:       *             area:          \n"
          << setw(87) << setfill('*') << "*\n"
          << setfill(' ');
 
