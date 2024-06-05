@@ -52,7 +52,8 @@
         "concepts": "cpp",
         "optional": "cpp",
         "string_view": "cpp",
-        "numbers": "cpp"
+        "numbers": "cpp",
+        "set": "cpp"
     },
     "cSpell.enableFiletypes": [
         "clojure"
@@ -62,10 +63,14 @@
         "Passw",
         "cutline",
         "getput",
+        "lufi",
         "namesp",
+        "needstradd",
         "oldsec",
+        "spac",
         "strcal",
         "timediff",
+        "yoyo",
         "zoro"
     ],
     "cSpell.words": [

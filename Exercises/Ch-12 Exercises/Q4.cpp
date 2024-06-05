@@ -11,15 +11,7 @@
 #include <algorithm>
 #include "maths.cpp"
 
-// Removing space in the equation.
-void era_eq(std::string &equation)
-{
-    while (equation.find(' ') != std::string::npos) // identify the character ' ' int the equation string.
-    {
-        int a = equation.find(' ');
-        equation.erase(a, 1); // remove the character ' ' from equation.
-    }
-}
+
 
 // cutting out block from equation.
 std::string block(std::string &equation)
@@ -164,26 +156,34 @@ std::string bracket(std::string &equation)
     {
         for (int column = 0; column < max_column_in_equation; column++)
         {
-            switch (ele_2D[row][column].at(0))
+            switch (ele_2D[row][column][0])
             {
             case '+':
                 for (int last_column = 0; last_column < max_column_in_equation; last_column++)
                 {
-                    result = strcal::add(ele_2D[total_bracket_in_equation][last_column],ele_2D[row][column]);
+                    result = result + strcal::add(ele_2D[total_bracket_in_equation][last_column],ele_2D[row][column]);
                 }                
                 break;
             case '-':
+                for (int last_column = 0; last_column < max_column_in_equation; last_column++)
+                {
+                    result = result + strcal::minus(ele_2D[total_bracket_in_equation][last_column],ele_2D[row][column]);
+                }                
                 break;
             default:
+                for (int last_column = 0; last_column < max_column_in_equation; last_column++)
+                {
+                    result = result + strcal::multi(ele_2D[total_bracket_in_equation][last_column],ele_2D[row][column]);
+                }                
                 break;
             }
-        }
-        
-        
+        } 
     }
     
+    std::cout << '\n' << ele_2D[3][1] << '\t' << ele_2D[1][0] << '\n';
+    result = strcal::add(ele_2D[3][1],ele_2D[1][0]);
 
-    return equation;
+    return result;
 }
 
 int main()
@@ -193,12 +193,14 @@ int main()
         c("(45+79)(x^2)+45x=0"),
         d("459(x^2)+85x+45=0"),
         e("45(((45+6x)+19)8)"),
-        f("245x+(4x+2)+5=0");
+        f("245x+(4x+2)+5=0"),
+        g = "19",
+        h = "45";
 
-    era_eq(a); // removing space
+    //era_eq(a); // removing space
     // std::cout << "\n"/* << block(e)*/ << "\n" << e.length() << "\n";
 
-    bracket(e);
+    std::cout << '\n' << bracket(e);
 
     return 0;
 }

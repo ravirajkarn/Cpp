@@ -5,18 +5,23 @@
 #include <iostream>
 #include <string>
 
-using namespace std;
 
 int main()
 {
     int integer;
-    string number = "-145";
+    std::string number = "-145";
 
-    integer = stoi(number);
+    integer = std::stoi(number);
 
     integer = -45;
 
-    cout << '\n' << integer << endl;
+    std::cout << '\n' << stoi(number) << std::endl;
+
+    std::string a = "-45",
+           b = "+19";
+    
+    int i = stoi(a) + stoi(b);
+    std::cout << '\n' << 45+19 << '\t' << i << std::endl;
 
     return 0; 
 }
