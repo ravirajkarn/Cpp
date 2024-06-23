@@ -2,7 +2,10 @@
     "configurations": [
         {
             "name": "GCC",
-            "includePath": ["${workspaceFolder}/**"],
+            "includePath":[
+                "${workspaceFolder}/**",
+                "C:\\Program Files (x86)\\FMT\\include\\**"
+            ],
             "defines": [
                 "_DEBUG",
                 "UNICODE",
