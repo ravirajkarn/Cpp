@@ -4,13 +4,19 @@
         {
             "type": "cppbuild",
             "label": "C/C++: g++ build active file",
-            "command": "C:\\msys64\\ucrt64\\bin\\g++.exe",
+            "command": "C:/msys64/ucrt64/bin/g++.exe",
             "args": [
                 "-fdiagnostics-color=always",
                 "-g",
                 "${file}",
+                "-I",
+                "D:/usefull/Code/C++/Libraries/fmt/fmt/include",
                 "-o",
-                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+                "${fileDirname}/${fileBasenameNoExtension}.exe",
+                "-L",
+                "D://usefull//Code//C++//Libraries//fmt//build",
+                "-l",
+                "fmt"
             ],
             "options": {
                 "cwd": "${fileDirname}"
