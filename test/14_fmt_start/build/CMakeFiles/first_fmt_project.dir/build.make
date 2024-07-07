@@ -69,6 +69,7 @@ include CMakeFiles/first_fmt_project.dir/progress.make
 include CMakeFiles/first_fmt_project.dir/flags.make
 
 CMakeFiles/first_fmt_project.dir/fmt.cpp.obj: CMakeFiles/first_fmt_project.dir/flags.make
+CMakeFiles/first_fmt_project.dir/fmt.cpp.obj: CMakeFiles/first_fmt_project.dir/includes_CXX.rsp
 CMakeFiles/first_fmt_project.dir/fmt.cpp.obj: D:/usefull/Code/C++/test/14_fmt_start/fmt.cpp
 CMakeFiles/first_fmt_project.dir/fmt.cpp.obj: CMakeFiles/first_fmt_project.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\usefull\Code\C++\test\14_fmt_start\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/first_fmt_project.dir/fmt.cpp.obj"
@@ -91,6 +92,7 @@ first_fmt_project_EXTERNAL_OBJECTS =
 
 first_fmt_project.exe: CMakeFiles/first_fmt_project.dir/fmt.cpp.obj
 first_fmt_project.exe: CMakeFiles/first_fmt_project.dir/build.make
+first_fmt_project.exe: C:/Program\ Files\ (x86)/FMT/lib/libfmt.a
 first_fmt_project.exe: CMakeFiles/first_fmt_project.dir/linkLibs.rsp
 first_fmt_project.exe: CMakeFiles/first_fmt_project.dir/objects1.rsp
 first_fmt_project.exe: CMakeFiles/first_fmt_project.dir/link.txt
