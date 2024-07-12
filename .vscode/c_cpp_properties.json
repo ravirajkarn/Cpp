@@ -4,7 +4,8 @@
             "name": "GCC",
             "includePath": [
                 "${workspaceFolder}/**",
-                "D:/usefull/Code/C++/Libraries/fmt/fmt/include/**"
+                "D:/usefull/Code/Libraries/C++/fmt/fmt/include/**",
+                "C:/Program Files (x86)/OpenXLSX/include/OpenXLSX/**"
             ],
             "defines": [
                 "_DEBUG",

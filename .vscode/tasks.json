@@ -10,13 +10,15 @@
                 "-g",
                 "${file}",
                 "-I",
-                "D:/usefull/Code/C++/Libraries/fmt/fmt/include",
+                "D:/usefull/Code/Libraries/C++/fmt/fmt/include",
+                "C:/Program Files (x86)/OpenXLSX/include/OpenXLSX",
                 "-o",
                 "${fileDirname}/${fileBasenameNoExtension}.exe",
                 "-L",
-                "D://usefull//Code//C++//Libraries//fmt//build",
+                "D:/usefull/Code/Libraries/C++/fmt/build",
                 "-l",
-                "fmt"
+                "fmt",
+                "OpenXLSX"
             ],
             "options": {
                 "cwd": "${fileDirname}"
@@ -52,13 +54,13 @@
         }
     },
     "windows": {
-        "command": "C:\\msys64\\ucrt64\\bin\\g++.exe",
+        "command": "C:/msys64/ucrt64/bin/g++.exe",
         "args": [
             "-fdiagnostics-color=always",
             "-g",
             "${file}",
             "-o",
-            "${fileDirname}\\${fileBasenameNoExtension}.exe"
+            "${fileDirname}/${fileBasenameNoExtension}.exe"
         ],
         "options": {
             "cwd": "${fileDirname}"

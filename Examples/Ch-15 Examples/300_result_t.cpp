@@ -13,7 +13,7 @@ int main() // Some air temperature measurements
         t4(17.7); // at current time
     cout << "Default values: ";
     t1.print();
-    cout << "\n Temperature   Time  \n"
+    cout << "\n  Temperature   Time  \n"
          << "-------------------------" << endl;
     t2.print();
     t3.print();

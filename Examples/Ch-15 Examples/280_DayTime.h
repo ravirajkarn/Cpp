@@ -4,6 +4,9 @@
 // ---------------------------------------------------
 #ifndef _DAYTIME_
 #define _DAYTIME_
+
+#include <ctime> // Functions time(), localtime()
+
 class DayTime
 {
 private:
@@ -40,9 +43,23 @@ public:
     {
         return asSeconds() < t.asSeconds();
     } // this->asSeconds() < t.asSeconds();
-
-    void print(){
-        ;
-    }
+    // void print()
+    // {
+    //     ;
+    // }
 };
+
+using namespace std;
+const DayTime &currentTime() // Returns the
+{                            // present time.
+    static DayTime curTime;
+    time_t sec;
+    time(&sec); // Gets the present time.
+    // Initializes the struct
+    struct tm *time = localtime(&sec); // tm with it.
+    curTime.setTime(time->tm_hour, time->tm_min,
+                    time->tm_sec);
+    return curTime;
+}
+
 #endif // _DAYTIME_
