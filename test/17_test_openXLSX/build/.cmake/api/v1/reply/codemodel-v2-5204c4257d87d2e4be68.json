@@ -1,0 +1,192 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "Examples",
+					"childIndexes" : 
+					[
+						2
+					],
+					"jsonFile" : "directory-Examples-Debug-23a23bf6dc670584ea38.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "Examples",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7
+					]
+				},
+				{
+					"build" : "Examples/external/nowide",
+					"jsonFile" : "directory-Examples.external.nowide-Debug-23d7f796dcc18c0a27f2.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.9"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 2,
+					"source" : "Examples/external/nowide",
+					"targetIndexes" : 
+					[
+						8
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Demo1"
+				},
+				{
+					"childIndexes" : 
+					[
+						2
+					],
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "OpenXLSX.Examples",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						2
+					],
+					"name" : "nowide",
+					"parentIndex" : 1,
+					"targetIndexes" : 
+					[
+						8
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "Demo1::@e67388b41b83090ac410",
+					"jsonFile" : "target-Demo1-Debug-45c9b314489bb835625a.json",
+					"name" : "Demo1",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "Demo2::@e67388b41b83090ac410",
+					"jsonFile" : "target-Demo2-Debug-2495de4e5d6a013c4158.json",
+					"name" : "Demo2",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "Demo3::@e67388b41b83090ac410",
+					"jsonFile" : "target-Demo3-Debug-f297db5097fd9a5f0e54.json",
+					"name" : "Demo3",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "Demo4::@e67388b41b83090ac410",
+					"jsonFile" : "target-Demo4-Debug-d23ead65c9f1bc2f9c4c.json",
+					"name" : "Demo4",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "Demo5::@e67388b41b83090ac410",
+					"jsonFile" : "target-Demo5-Debug-1bb67759971ad144dfec.json",
+					"name" : "Demo5",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "Demo6::@e67388b41b83090ac410",
+					"jsonFile" : "target-Demo6-Debug-1ca6f3c8ff3e8f594dc6.json",
+					"name" : "Demo6",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "Demo7::@e67388b41b83090ac410",
+					"jsonFile" : "target-Demo7-Debug-e0c10f1a097a8cd2a111.json",
+					"name" : "Demo7",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "Demo8::@e67388b41b83090ac410",
+					"jsonFile" : "target-Demo8-Debug-9a0de958839c0997cdb4.json",
+					"name" : "Demo8",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "nowide::@0dfaf24ac41fbe8e5f5c",
+					"jsonFile" : "target-nowide-Debug-1278f50c21a2880a874b.json",
+					"name" : "nowide",
+					"projectIndex" : 2
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "D:/usefull/Code/C++/Test/17_test_openXLSX/build",
+		"source" : "D:/usefull/Code/C++/Test/17_test_openXLSX"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

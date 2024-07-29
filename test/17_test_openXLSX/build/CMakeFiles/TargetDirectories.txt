@@ -1,0 +1,15 @@
+D:/usefull/Code/C++/Test/17_test_openXLSX/build/CMakeFiles/edit_cache.dir
+D:/usefull/Code/C++/Test/17_test_openXLSX/build/CMakeFiles/rebuild_cache.dir
+D:/usefull/Code/C++/Test/17_test_openXLSX/build/Examples/CMakeFiles/Demo1.dir
+D:/usefull/Code/C++/Test/17_test_openXLSX/build/Examples/CMakeFiles/Demo2.dir
+D:/usefull/Code/C++/Test/17_test_openXLSX/build/Examples/CMakeFiles/Demo3.dir
+D:/usefull/Code/C++/Test/17_test_openXLSX/build/Examples/CMakeFiles/Demo4.dir
+D:/usefull/Code/C++/Test/17_test_openXLSX/build/Examples/CMakeFiles/Demo5.dir
+D:/usefull/Code/C++/Test/17_test_openXLSX/build/Examples/CMakeFiles/Demo6.dir
+D:/usefull/Code/C++/Test/17_test_openXLSX/build/Examples/CMakeFiles/Demo7.dir
+D:/usefull/Code/C++/Test/17_test_openXLSX/build/Examples/CMakeFiles/Demo8.dir
+D:/usefull/Code/C++/Test/17_test_openXLSX/build/Examples/CMakeFiles/edit_cache.dir
+D:/usefull/Code/C++/Test/17_test_openXLSX/build/Examples/CMakeFiles/rebuild_cache.dir
+D:/usefull/Code/C++/Test/17_test_openXLSX/build/Examples/external/nowide/CMakeFiles/nowide.dir
+D:/usefull/Code/C++/Test/17_test_openXLSX/build/Examples/external/nowide/CMakeFiles/edit_cache.dir
+D:/usefull/Code/C++/Test/17_test_openXLSX/build/Examples/external/nowide/CMakeFiles/rebuild_cache.dir
