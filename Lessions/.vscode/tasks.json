@@ -9,12 +9,8 @@
                 "-fdiagnostics-color=always",
                 "-g",
                 "${file}",
-                "-I",
-                "D:/usefull/Code/Libraries/C++/fmt/fmt/include",
                 "-o",
-                "${fileDirname}/${fileBasenameNoExtension}.exe",
-                "-L",
-                "D:/usefull/Code/Libraries/C++/fmt/fmt/build",
+                "${fileDirname}/${fileBasenameNoExtension}.exe"
             ],
             "options": {
                 "cwd": "${fileDirname}"

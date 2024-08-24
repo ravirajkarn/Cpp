@@ -13,7 +13,7 @@
  * ■ Implement the necessary methods.
  * ■ Test the new Member class by creating at least two objects with the data
  * of your choice and calling the methods you defined.
- * ■ Add a static member called ptrBoss to the class.This pointer indicates
+ * ■ Add a static member called ptrBoss to /the class.This pointer indicates
  * the member who has been appointed as chairperson. If no chairperson
  * has been appointed, the pointer should point to NULL.\
  * ■ Additionally, define the static access methods getBoss() and setBoss().

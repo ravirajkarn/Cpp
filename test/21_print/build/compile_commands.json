@@ -1,0 +1,8 @@
+[
+{
+  "directory": "D:/usefull/Code/C++/Test/21_print/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe   -g -o CMakeFiles\\print.dir\\main.cpp.obj -c D:\\usefull\\Code\\C++\\Test\\21_print\\main.cpp",
+  "file": "D:/usefull/Code/C++/Test/21_print/main.cpp",
+  "output": "CMakeFiles/print.dir/main.cpp.obj"
+}
+]

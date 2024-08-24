@@ -83,7 +83,8 @@
         "cinttypes": "cpp",
         "typeindex": "cpp",
         "variant": "cpp",
-        "version": "cpp"
+        "version": "cpp",
+        "text_encoding": "cpp"
     },
     "cSpell.enableFiletypes": [
         "clojure"
@@ -110,8 +111,12 @@
         "zoro"
     ],
     "cSpell.words": [
+        "getcount",
+        "idob",
         "kumar",
-        "sumit"
+        "Shruti",
+        "sumit",
+        "wdob"
     ],
     "cmake.sourceDirectory": "D:/usefull/Code/C++/Examples/Ch-15 Examples",
     "C_Cpp.default.compilerPath": "C:/msys64/ucrt64/bin/g++.exe",
