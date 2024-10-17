@@ -3,7 +3,7 @@
 #include <thread>
 #include <fmt/chrono.h>
 
-#define HEAD fmt::print("\n{:->25}\n\n", 0 );
+#define HEAD fmt::print ("\n{:->25}\n\n", 0 );
 
 
 void fun1(void){
