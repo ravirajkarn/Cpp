@@ -18,7 +18,7 @@ private:
     long nr;     // Article number
     std::string name; // Article name
     double sp;   // Selling price
-    static int count ;
+    static int count ; // Static counter of the object.
 public:
     Article(long nr = 0, const std::string &name = "noname", double sp = 0.0);
     
@@ -26,7 +26,7 @@ public:
     * Define a copy constructor that also increments the object counter by 1
     * and issues a message. This ensures that the counter will always be accurate.     
     */
-    Article(Article &s) :  nr(s.nr), name(s.name), sp(s.sp) { count++; }
+    Article(Article &s) :  nr(s.nr), name(s.name), sp(s.sp) { if(count++){ std::cout << "Counter is increased."; } }
     
     ~Article();
     void print();

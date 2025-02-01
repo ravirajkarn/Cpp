@@ -1,6 +1,6 @@
 /**
  * @file Q2.cpp
- * @author Sumit Kumar (ravirajkarn+support.com)
+ * @author Sumit Kumar (ravirajkarn+support@outlook.com)
  * @brief Exercise 2
  * A sports club needs a program to manage its members.Your task is to define
  * and test a class called Member for this purpose.
@@ -15,7 +15,7 @@
  * of your choice and calling the methods you defined.
  * ■ Add a static member called ptrBoss to /the class.This pointer indicates
  * the member who has been appointed as chairperson. If no chairperson
- * has been appointed, the pointer should point to NULL.\
+ * has been appointed, the pointer should point to NULL.
  * ■ Additionally, define the static access methods getBoss() and setBoss().
  * Use a pointer to set and return the object in question.
  * ■ Test the enhanced Member class by reading the number of an existing
