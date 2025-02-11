@@ -1,0 +1,8 @@
+[
+{
+  "directory": "D:/usefull/Code/C++/Test/26_storing_date/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe  @CMakeFiles/storing_date.dir/includes_CXX.rsp -g -o CMakeFiles\\storing_date.dir\\storedate.cpp.obj -c D:\\usefull\\Code\\C++\\Test\\26_storing_date\\storedate.cpp",
+  "file": "D:/usefull/Code/C++/Test/26_storing_date/storedate.cpp",
+  "output": "CMakeFiles/storing_date.dir/storedate.cpp.obj"
+}
+]

@@ -7,6 +7,10 @@ set(CMAKE_DEPENDS_GENERATOR "MinGW Makefiles")
 # The top level Makefile was generated from the following files:
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
+  "C:/Program Files (x86)/FMT/lib/cmake/fmt/fmt-config-version.cmake"
+  "C:/Program Files (x86)/FMT/lib/cmake/fmt/fmt-config.cmake"
+  "C:/Program Files (x86)/FMT/lib/cmake/fmt/fmt-targets-release.cmake"
+  "C:/Program Files (x86)/FMT/lib/cmake/fmt/fmt-targets.cmake"
   "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeCInformation.cmake"
   "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeCXXInformation.cmake"
   "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeCommonLanguageInclude.cmake"
@@ -29,7 +33,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "C:/Program Files/CMake/share/cmake-3.30/Modules/Platform/Windows-windres.cmake"
   "C:/Program Files/CMake/share/cmake-3.30/Modules/Platform/Windows.cmake"
   "C:/Program Files/CMake/share/cmake-3.30/Modules/Platform/WindowsPaths.cmake"
-  "D:/usefull/Code/C++/Test/21_print/CMakeLists.txt"
+  "D:/usefull/Code/C++/Test/26_storing_date/CMakeLists.txt"
   "CMakeFiles/3.30.2/CMakeCCompiler.cmake"
   "CMakeFiles/3.30.2/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.30.2/CMakeRCCompiler.cmake"
@@ -49,5 +53,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/print.dir/DependInfo.cmake"
+  "CMakeFiles/storing_date.dir/DependInfo.cmake"
   )

@@ -1,7 +1,8 @@
 #ifndef _DATE_HPP_
 #define _DATE_HPP_
 
-#include <chrono.h>
+#include <fmt/chrono.h>
+#include <fmt/color.h>
 
 class DOB
 {
@@ -26,17 +27,26 @@ public:
  */
 DOB::DOB(int date, int months, int years)
 {
-    if
 
+    if (months > 12 || months < 1)
+    {
+        fmt::print(fmt::fg(fmt::color::red),"unvalid input");
+    }
+    
+    
+    /**
+     * @brief Construct a new switch object to check that days entered by the user is less the 31 days. 
+     */
     switch (months)
     {
-    case 01:
-    case 03:
-    case 05:
-    case 07:
-    case 08:
+    case 1:
+    case 3:
+    case 5:
+    case 7:
+    case 8:
     case 10:
     case 12:
+    // end of months
         
     default:
         break;
@@ -46,6 +56,5 @@ DOB::DOB(int date, int months, int years)
 DOB::~DOB()
 {
 }
-
 
 #endif // Date.hpp end

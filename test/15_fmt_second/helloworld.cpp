@@ -1,4 +1,4 @@
-#include <fmt\core.h>
+w#include <fmt\core.h>
 
 int main()
 {

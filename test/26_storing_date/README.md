@@ -1,0 +1,7 @@
+# Storing Date
+I want to store date in the pre build data type for date. So that it will take care of all the small things like taking care of days (i.e. days might goes grater then 31 days or less then 1 and 29 days in leap year),months should not excide 12 and so on. If we create our own custom data type then we need program all these this.
+
+I want to is there any data type exist there to perform all this task.
+
+## Testing
+### #include< chrono>

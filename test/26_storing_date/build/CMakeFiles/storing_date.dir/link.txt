@@ -1,0 +1,3 @@
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\storing_date.dir/objects.a
+C:\msys64\ucrt64\bin\ar.exe qc CMakeFiles\storing_date.dir/objects.a @CMakeFiles\storing_date.dir\objects1.rsp
+C:\msys64\ucrt64\bin\c++.exe -g -Wl,--whole-archive CMakeFiles\storing_date.dir/objects.a -Wl,--no-whole-archive -o storing_date.exe -Wl,--out-implib,libstoring_date.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\storing_date.dir\linkLibs.rsp
