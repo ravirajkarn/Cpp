@@ -4,8 +4,8 @@
             "name": "GCC",
             "includePath": [
                 "${workspaceFolder}/**",
-                "D:/usefull/Code/Libraries/C++/fmt/fmt/include/**",
-                "D:/usefull/Code/Libraries/C++/fmt/fmt/include"
+                "D:/useful/Code/Libraries/C++/fmt/fmt/include/**",
+                "~/.conan2/**"
             ],
             "defines": [
                 "_DEBUG",
