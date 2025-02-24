@@ -18,7 +18,7 @@ class pkgRecipe(ConanFile):
         description = "file to test to store date"
         topics = ("date")
 
-    # 3. which type of food is going to be prepared. I mean, is it a human food or animal food.
+    # 3. which type of food is going to be prepared. I mean, is it a human food or animal food/ vegetarian or non-veg.
         # Binary configuration
         settings = "os", "compiler", "build_type", "arch"
 
@@ -63,9 +63,3 @@ class pkgRecipe(ConanFile):
 
         def layout(self):
             cmake_layout(self)
-            
-
-
-    
-
-    

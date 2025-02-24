@@ -4,4 +4,4 @@
 *.un~
 Frameworks/
 Libraries/
-Test/26_storing_date/build/
+build/

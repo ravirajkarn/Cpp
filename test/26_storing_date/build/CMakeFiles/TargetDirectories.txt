@@ -1,3 +1,0 @@
-D:/useful/Code/C++/Test/26_storing_date/build/CMakeFiles/storedate.dir
-D:/useful/Code/C++/Test/26_storing_date/build/CMakeFiles/edit_cache.dir
-D:/useful/Code/C++/Test/26_storing_date/build/CMakeFiles/rebuild_cache.dir

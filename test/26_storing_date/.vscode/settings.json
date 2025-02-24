@@ -1,6 +1,11 @@
 {
     "cSpell.words": [
         "chrono",
+        "noww",
         "storedate"
-    ]
+    ],
+    "files.associations": {
+        "iomanip": "cpp",
+        "chrono": "cpp"
+    }
 }

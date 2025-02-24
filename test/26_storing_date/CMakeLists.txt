@@ -2,8 +2,10 @@
 cmake_minimum_required(VERSION 3.15)
 project(storedate CXX)
 
+set(CMAKE_CXX_STANDARD 20)
+
 # Showing the chef where conan's kitchen is located.
-include(${CMAKE_BINARY_DIR}/Release/generators/conan_toolchain.cmake)
+include(${CMAKE_BINARY_DIR}/generators/conan_toolchain.cmake)
 
 find_package(fmt REQUIRED)
 
