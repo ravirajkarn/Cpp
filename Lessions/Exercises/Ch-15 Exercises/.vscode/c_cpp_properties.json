@@ -4,8 +4,8 @@
             "name": "GCC",
             "includePath": [
                 "${workspaceFolder}/**",
-                "D:/useful/Code/Libraries/C++/fmt/fmt/include/**"
-                // "D:/useful/Code/Libraries/C++/OpenXLSX/OpenXLSX/**"
+                "D:/useful/Code/Libraries/C++/fmt/fmt/include/**",
+                "~/.conan2/**"
             ],
             "defines": [
                 "_DEBUG",
@@ -14,7 +14,8 @@
             ],
             "cStandard": "c17",
             "cppStandard": "c++20",
-            "intelliSenseMode": "windows-gcc-x64"
+            "intelliSenseMode": "windows-gcc-x64",
+            "configurationProvider": "ms-vscode.cmake-tools"
         }
     ],
     "version": 4
