@@ -22,12 +22,12 @@ if "%1"=="--external" (
 goto exit
 
 :external
-start D:\usefull\Books\C++.pdf
+start D:\useful\Books\C++.pdf
 shift
 goto loop
 
 :code
-powershell code D:\usefull\Books\C++.pdf
+powershell code D:\useful\Books\C++.pdf
 shift
 goto loop
 

@@ -11,3 +11,6 @@ add_executable(Q1 src/Q1.cpp)
 find_package(fmt REQUIRED)
 add_executable(Q2 src/Q2.cpp)
 target_link_libraries(Q2 PRIVATE fmt::fmt)
+
+add_executable(Q3 src/Q3.cpp)
+target_link_libraries(Q3 PRIVATE fmt::fmt)
