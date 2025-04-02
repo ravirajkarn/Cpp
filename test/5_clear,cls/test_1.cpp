@@ -45,7 +45,7 @@ int main()
     system("cls");                  // worked //~ It also worked.
     /*
     !According to bing we should not use it as it.
-    !in fect we should not use system(); at all
+    !in fact we should not use system(); at all
     !reason: https://cplusplus.com/articles/j3wTURfi/
 
     !What system() does is:

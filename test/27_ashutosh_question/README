@@ -1,5 +1,13 @@
+// Question 1) double pyramid pattern
 1********1
 12******21
 123****321
 1234**4321
 1234554321
+
+// Question 2) print the pattern 
+44444
+43334
+43234
+43334
+44444
