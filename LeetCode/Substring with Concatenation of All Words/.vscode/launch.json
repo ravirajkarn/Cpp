@@ -1,0 +1,41 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            // launch.json properties.
+            "name": "Debug",
+            "type": "cppdbg",
+            "request": "launch",
+            "preLaunchTask": "CMake: build",
+            
+            // Configure vscode debugger behavior.
+            "program": "${workspaceFolder}/build/Debug/${fileBasenameNoExtension}",
+            "externalConsole": true,
+            "avoidWindowsConsoleRedirection": false,
+            
+            // Configure target application.
+            "args": [],
+            "cwd": "${workspaceFolder}", // Sets the working directory of the application launched by the debugger
+            "environment": [],
+
+            // Configure debugger behavior(gdb).
+            "MIMode": "gdb",
+            "stopAtEntry": false,
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": false
+                }
+            ],
+            "linux": {
+                "miDebuggerPath": "/usr/bin/gdb",
+                "miDebuggerArgs": ""
+            },
+            "windows": {
+                "miDebuggerPath": "C:\\msys64\\ucrt64\\bin\\gdb.exe",
+                "miDebuggerArgs": ""
+            }
+        }
+    ]
+}
