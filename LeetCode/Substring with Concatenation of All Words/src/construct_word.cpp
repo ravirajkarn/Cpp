@@ -3,6 +3,7 @@
 #include <sstream>
 #include <vector>
 #include <algorithm>
+#include <chrono>
 
 /**
  * @brief It check wether the input stand on the given criteria.
@@ -99,8 +100,9 @@ int main()
     fmt::print("hello\n");
     std::string s = "barfoofoobarthefoobarman";
     std::vector<std::string> words = {"bar","foo","the"};
+    
+    auto start = std::chrono::high_resolution_clock::now();
     auto positions = concatenation_position(s, words);
-
     fmt::print("[");
     for (int i = 0; i < positions.size(); i++)
     {
@@ -108,6 +110,9 @@ int main()
         if (i!= positions.size() - 1) fmt::print(", ");
     }
     fmt::print("]");
+    auto end = std::chrono::high_resolution_clock::now();
+    auto duration = std::chrono::duration_cast<std::chrono::microseconds>(end - start);
+    fmt::print("\nTime taken: {} microseconds\n", duration.count());
 
     return 0;
 }           

@@ -19,3 +19,5 @@ find_package(fmt REQUIRED)
 
 add_executable(construct_word src/construct_word.cpp)
 target_link_libraries(construct_word PRIVATE fmt::fmt)
+
+add_executable(solution2 src/solution2.cpp)

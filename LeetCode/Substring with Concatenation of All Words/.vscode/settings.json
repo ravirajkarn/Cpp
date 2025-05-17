@@ -1,8 +1,20 @@
 {
     "cSpell.words": [
+        "abefcd",
         "Ashutosh",
+        "barfoo",
+        "barfoofoobarthefoobarman",
         "barfoothefoobarman",
-        "kbhit"
+        "barthefoo",
+        "cdabef",
+        "cdefab",
+        "efabcd",
+        "efcdab",
+        "foobarthe",
+        "kbhit",
+        "thefoobar",
+        "wcount",
+        "wordgoodgoodgoodbestword"
     ],
     "cmake.useCMakePresets": "always",
     "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
