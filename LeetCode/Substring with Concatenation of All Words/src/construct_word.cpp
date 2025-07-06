@@ -32,7 +32,7 @@ inline bool condition_meet(std::string &sentence, std::vector<std::string> &b){
  * @param words list of words. 
  * @return std::vector<std::string> all the permutation of the words.
  */
-std::vector<std::string> concatenation(std::vector<std::string> words){
+std::vector<std::string> concatenation(std::vector<std::string> &words){
     
     std::sort(words.begin(), words.end()); // sort the element befor creating permutation.
     std::vector<std::string> result; // storage area where permuted elements will store. 
@@ -61,7 +61,7 @@ std::vector<std::string> concatenation(std::vector<std::string> words){
  * @param _position position from where we need to find the word.
  * @return std::vector<int> all the position of the element in string.
  */
-std::vector<int> position(std::string s, std::string element, int _position = 0 ){
+std::vector<int> position(std::string& s, std::string& element, int _position = 0 ){
     std::vector<int> positions;
 
     _position = s.find(element,_position);
@@ -78,32 +78,39 @@ std::vector<int> position(std::string s, std::string element, int _position = 0 
 /*
  * error: empty vector
  */
-std::vector<int> concatenation_position(std::string s, std::vector<std::string> words){
+std::vector<int> concatenation_position(std::string &s, std::vector<std::string> &words){
     if(!condition_meet(s, words)) return std::vector<int>(); // error.
 
     std::vector<int> result;
 
     auto concatenated_words = concatenation(words);
 
-    for (const auto& single_concatenation_word : concatenated_words)
+    for (auto &single_concatenation_word : concatenated_words)
     {
         auto single_position = position(s, single_concatenation_word);
         result.insert(result.end(), single_position.begin(), single_position.end());
-    }
+    }  
 
     return result;
 }
+
+class Solution {
+public:
+    std::vector<int> findSubstring(std::string &s, std::vector<std::string> &words) {
+        return concatenation_position(s, words);
+    }
+};
 
 
 int main()
 {
     fmt::print("hello\n");
-    std::string s = "barfoofoobarthefoobarman";
-    std::vector<std::string> words = {"bar","foo","the"};
+    std::string s = "pjzkrkevzztxductzzxmxsvwjkxpvukmfjywwetvfnujhweiybwvvsrfequzkhossmootkmyxgjgfordrpapjuunmqnxxdrqrfgkrsjqbszgiqlcfnrpjlcwdrvbumtotzylshdvccdmsqoadfrpsvnwpizlwszrtyclhgilklydbmfhuywotjmktnwrfvizvnmfvvqfiokkdprznnnjycttprkxpuykhmpchiksyucbmtabiqkisgbhxngmhezrrqvayfsxauampdpxtafniiwfvdufhtwajrbkxtjzqjnfocdhekumttuqwovfjrgulhekcpjszyynadxhnttgmnxkduqmmyhzfnjhducesctufqbumxbamalqudeibljgbspeotkgvddcwgxidaiqcvgwykhbysjzlzfbupkqunuqtraxrlptivshhbihtsigtpipguhbhctcvubnhqipncyxfjebdnjyetnlnvmuxhzsdahkrscewabejifmxombiamxvauuitoltyymsarqcuuoezcbqpdaprxmsrickwpgwpsoplhugbikbkotzrtqkscekkgwjycfnvwfgdzogjzjvpcvixnsqsxacfwndzvrwrycwxrcismdhqapoojegggkocyrdtkzmiekhxoppctytvphjynrhtcvxcobxbcjjivtfjiwmduhzjokkbctweqtigwfhzorjlkpuuliaipbtfldinyetoybvugevwvhhhweejogrghllsouipabfafcxnhukcbtmxzshoyyufjhzadhrelweszbfgwpkzlwxkogyogutscvuhcllphshivnoteztpxsaoaacgxyaztuixhunrowzljqfqrahosheukhahhbiaxqzfmmwcjxountkevsvpbzjnilwpoermxrtlfroqoclexxisrdhvfsindffslyekrzwzqkpeocilatftymodgztjgybtyheqgcpwogdcjlnlesefgvimwbxcbzvaibspdjnrpqtyeilkcspknyylbwndvkffmzuriilxagyerjptbgeqgebiaqnvdubrtxibhvakcyotkfonmseszhczapxdlauexehhaireihxsplgdgmxfvaevrbadbwjbdrkfbbjjkgcztkcbwagtcnrtqryuqixtzhaakjlurnumzyovawrcjiwabuwretmdamfkxrgqgcdgbrdbnugzecbgyxxdqmisaqcyjkqrntxqmdrczxbebemcblftxplafnyoxqimkhcykwamvdsxjezkpgdpvopddptdfbprjustquhlazkjfluxrzopqdstulybnqvyknrchbphcarknnhhovweaqawdyxsqsqahkepluypwrzjegqtdoxfgzdkydeoxvrfhxusrujnmjzqrrlxglcmkiykldbiasnhrjbjekystzilrwkzhontwmehrfsrzfaqrbbxncphbzuuxeteshyrveamjsfiaharkcqxefghgceeixkdgkuboupxnwhnfigpkwnqdvzlydpidcljmflbccarbiegsmweklwngvygbqpescpeichmfidgsjmkvkofvkuehsmkkbocgejoiqcnafvuokelwuqsgkyoekaroptuvekfvmtxtqshcwsztkrzwrpabqrrhnlerxjojemcxel";
+    std::vector<std::string> words = {"dhvf","sind","ffsl","yekr","zwzq","kpeo","cila","tfty","modg","ztjg","ybty","heqg","cpwo","gdcj","lnle","sefg","vimw","bxcb"};
     
     auto start = std::chrono::high_resolution_clock::now();
-    auto positions = concatenation_position(s, words);
     fmt::print("[");
+    auto positions = concatenation_position(s, words);
     for (int i = 0; i < positions.size(); i++)
     {
         fmt::print("{}", positions.at(i));

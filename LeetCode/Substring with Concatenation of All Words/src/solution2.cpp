@@ -1,3 +1,4 @@
+#include <iostream>
 #include <unordered_map>
 #include <vector>
 #include <string>
@@ -78,3 +79,16 @@ public:
         return result;
     }
 };
+
+int main() {
+    Solution solution;
+    string s = "barfoothefoobarman";
+    vector<string> words = {"foo", "bar"};
+    vector<int> result = solution.findSubstring(s, words);
+    
+    // Output the result
+    for (int index : result) {
+        std::cout << index << " ";
+    }
+    return 0;
+}
