@@ -1,0 +1,3 @@
+/home/ravirajkarn/Documents/code/Cpp/test/38_multiplatform/build_linux/CMakeFiles/MyMultiPlatformApp.dir
+/home/ravirajkarn/Documents/code/Cpp/test/38_multiplatform/build_linux/CMakeFiles/edit_cache.dir
+/home/ravirajkarn/Documents/code/Cpp/test/38_multiplatform/build_linux/CMakeFiles/rebuild_cache.dir

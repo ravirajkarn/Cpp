@@ -1,0 +1,4 @@
+# ninja log v6
+2	401	1752550039701091156	CMakeFiles/MyMultiPlatformApp.dir/src/main.cpp.obj	31bb91d25e403a9d
+2	1590	1752550039701091156	CMakeFiles/MyMultiPlatformApp.dir/src/util.cpp.obj	df523c986e0af500
+1591	1635	1752550041293072189	bin/windows/MyMultiPlatformApp.exe	dbd15b186ea7dd89

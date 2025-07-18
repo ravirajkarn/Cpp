@@ -1,0 +1,4 @@
+# ninja log v6
+1	238	1752549835975655320	CMakeFiles/MyMultiPlatformApp.dir/src/util.cpp.o	a2a1e5440b54cd13
+305	390	1752549836279651231	bin/linux/MyMultiPlatformApp	8726541cd23f72bf
+0	305	1752549835975655320	CMakeFiles/MyMultiPlatformApp.dir/src/main.cpp.o	3763f81ce66dbaed
