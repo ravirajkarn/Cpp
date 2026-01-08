@@ -1,0 +1,6 @@
+[2025-11-23 13:48:29.416] [trace] This is a trace message.
+[2025-11-23 13:48:29.416] [debug] This is a debug message.
+[2025-11-23 13:48:29.416] [info] This is an info message.
+[2025-11-23 13:48:29.416] [warning] This is a warning message.
+[2025-11-23 13:48:29.416] [error] This is an error message.
+[2025-11-23 13:48:29.416] [critical] This is a critical message.

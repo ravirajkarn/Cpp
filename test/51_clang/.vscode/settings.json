@@ -1,0 +1,8 @@
+{
+    "cmake.sourceDirectory": "/home/ravirajkarn/Documents/code/Cpp/test/51_clang",
+    "cmake.debugConfig": {
+        "MIMode": "lldb",
+        "miDebuggerPath": "/usr/bin/lldb",
+        "stopAtEntry": false
+    }
+}

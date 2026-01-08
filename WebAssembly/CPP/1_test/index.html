@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <script>
+    WebAssembly.instantiateStreaming(fetch('main.wasm'))
+      .then(obj => {
+        const { add } = obj.instance.exports;
+        console.log("Result from Wasm:", add(10, 20));
+      });
+  </script>
+</body>
+</html>
+
