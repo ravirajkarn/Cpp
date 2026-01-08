@@ -4,11 +4,14 @@
 
 int main() {
     std::random_device rd;
-    std::map<int, int> hist;
+    std::mt19937 gen(rd());
 
-    for (int n = 0; n < 20000; ++n)
-        ++hist[rd() % 10];
+    std::uniform_int_distribution<> dist(1, 50);
 
-    for (const auto& p : hist)
-        std::cout << p.first << ": " << std::string(p.second / 100, '*') << '\n';
+    int random_number = dist(gen);
+    int random_number2 = dist(gen);
+
+    std::cout << "\nRandom number1 " << random_number << "\nRandom number2 " << random_number2;
+    return 0;
+
 }

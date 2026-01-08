@@ -21,7 +21,7 @@ class pkgRecipe(ConanFile):
     exports_sources = "CMakeLists.txt", "src/*"
 
     def requirements(self):
-        self.requires("fmt/11.1.3")
+        self.requires("fmt/12.1.0")
 
     def layout(self):
         cmake_layout(self)

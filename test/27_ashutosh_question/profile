@@ -5,4 +5,4 @@ compiler=gcc
 compiler.cppstd=gnu20
 compiler.libcxx=libstdc++
 compiler.version=14
-os=Windows
+os=Linux

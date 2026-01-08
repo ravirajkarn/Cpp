@@ -12,6 +12,5 @@ int main() {
         if (count % 5 == 0)
             std::cout << '\n';
     }
-
     return 0;
 }

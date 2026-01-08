@@ -1,3 +1,0 @@
-D:/usefull/Code/C++/test/14_fmt_start/build/CMakeFiles/first_fmt_project.dir
-D:/usefull/Code/C++/test/14_fmt_start/build/CMakeFiles/edit_cache.dir
-D:/usefull/Code/C++/test/14_fmt_start/build/CMakeFiles/rebuild_cache.dir
