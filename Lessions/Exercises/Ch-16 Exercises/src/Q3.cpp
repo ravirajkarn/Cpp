@@ -2,9 +2,10 @@
  * @file Q3.cpp
  * @author Sumit Kumar (ravirajkarn21@gmail.com)
  * @brief 
- * @details rite a program that outputs all prime numbers less than 1000.The program
+ * @details write a program that outputs all prime numbers less than 1000.The program
  *          should also count the number of prime numbers less than 1000.An integer >= 2
  *          is a prime number if it is not divisible by any number except 1 and itself. Use the
+ *          
  *          Sieve of Eratosthenes:
  *          To find primary numbers simply eliminate multiples of any primary numbers
  *          you have already found, i.e.:

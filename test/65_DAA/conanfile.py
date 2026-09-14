@@ -2,26 +2,23 @@ from conan import ConanFile
 from conan.tools.cmake import CMakeToolchain, CMake, cmake_layout, CMakeDeps
 
 
-class BinarySearchRecipe(ConanFile):
-    name = "Binary Search"
+class DAARecipe(ConanFile):
+    name = "mypkg"
     version = "0.1"
     package_type = "application"
 
     # Optional metadata
     license = "<Put the package license here>"
-    author = "Sumit Kumar", "ravirajkarn@outlook.com"
+    author = "<Put your name here> <And your email here>"
     url = "<Package recipe repository url here, for issues about the package>"
-    description = "Study on prime number and is's algorithms"
-    topics = ("c++", "Binary Search", "Algorithms")
+    description = "<Description of mypkg package here>"
+    topics = ("<Put some tag here>", "<here>", "<and here>")
 
     # Binary configuration
     settings = "os", "compiler", "build_type", "arch"
 
     # Sources are located in the same place as this recipe, copy them to the recipe
     exports_sources = "CMakeLists.txt", "src/*"
-
-    def requirements(self):
-        self.test_requires("gtest/1.17.0")
 
     def layout(self):
         cmake_layout(self)
@@ -40,7 +37,3 @@ class BinarySearchRecipe(ConanFile):
     def package(self):
         cmake = CMake(self)
         cmake.install()
-
-    
-
-    

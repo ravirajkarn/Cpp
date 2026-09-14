@@ -13,6 +13,7 @@ namespace PrimeNumber{
 
         /**
          * @brief Generates all prime numbers up to a given limit using the Sieve of Eratosthenes.
+         * @details 
          * @param limit The upper bound (inclusive) for generating primes.
          * @return std::vector<int> List of all primes up to 'limit'.
          */
@@ -41,6 +42,12 @@ namespace PrimeNumber{
             return primes;
         }
 
+        /**
+         * @brief 
+         * 
+         * @param limit 
+         * @return std::vector<int> 
+         */
         inline std::vector<int> bySieveOfAtkin(int limit){
             if (limit < 2){
                 return {}; // Return empty vector if limit is less than 2
